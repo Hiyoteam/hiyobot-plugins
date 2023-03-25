@@ -1,0 +1,32 @@
+name: Minify List
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update && sudo apt-get -y install python3
+        pip3 install -r requirements.txt
+
+    - name: Run minify.py
+      run: python3 minify.py
+
+    - name: Commit changes and push to main branch
+      uses: EndBug/add-and-commit@v7
+      with:
+        message: "Minify list data"
+        add: 'list.min.json'
+        branch: main
+        force: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
