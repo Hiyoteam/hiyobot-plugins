@@ -7,7 +7,7 @@
       "lxml",
       "requests"
     ],
-    "version":(0,0,1),
+    "version":[0,0,1],
     "keywords":"url, auto detect, 链接, 实时检测"
   },
   "hiyobot-plugin-example":{
@@ -16,7 +16,7 @@
     "options":{},
     "requirements":[
     ],
-    "version":(0,0,1),
+    "version":[0,0,1],
     "keywords":"示例, example"
   }
 }
