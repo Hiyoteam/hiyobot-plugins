@@ -1,7 +1,7 @@
 {
   "hiyobot-plugin-urls":{
     "info":"自动获得聊天室内发送的链接的标题。",
-    "url":"/single-file/hiyobot_plugin_urls.py",
+    "url":"/single_file/hiyobot_plugin_urls.py",
     "options":{},
     "requirements":[
       "lxml",
@@ -12,7 +12,7 @@
   },
   "hiyobot-plugin-example":{
     "info":"一个示例插件。",
-    "url":"/single-file/hiyobot_plugin_example.py",
+    "url":"/single_file/hiyobot_plugin_example.py",
     "options":{},
     "requirements":[
     ],
